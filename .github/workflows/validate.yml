@@ -17,12 +17,12 @@ jobs:
       - name: Checkout Framework source
         uses: actions/checkout@v4
         with:
-          repository: helderperez-dev/voodoo
+          repository: helderperez-dev/grumo
           path: voodoo
       - name: Checkout Store source
         uses: actions/checkout@v4
         with:
-          repository: helderperez-dev/voodoo-store
+          repository: helderperez-dev/grumo-store
           path: voodoo-store
       - uses: actions/setup-python@v5
         with:
