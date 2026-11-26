@@ -2,7 +2,7 @@
   "framework": {
     "canonical_scaffold_command": "voodoo new",
     "runtime_authority": "voodoo.runtime",
-    "version": "3.2.1",
+    "version": "3.2.2",
     "version_line": "3.2.x"
   },
   "ownership": {
@@ -16,7 +16,7 @@
     "durable_authority": "voodoo_store.Store",
     "format_major": 1,
     "supported_python_binding": ">=0.3.0,<0.4.0",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "version_line": "0.3.x"
   }
 }
