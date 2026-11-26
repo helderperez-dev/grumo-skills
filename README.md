@@ -56,8 +56,8 @@ For development of Voodoo Store:
 Clone the repository:
 
 ```bash
-git clone git@github.com:helderperez-dev/voodoo-skills.git
-cd voodoo-skills
+git clone git@github.com:helderperez-dev/grumo-skills.git
+cd grumo-skills
 ```
 
 ### Install globally for Copilot
@@ -181,16 +181,16 @@ This repository is the **distribution repository**.
 The intended long-term ownership model is:
 
 ```text
-helderperez-dev/voodoo
+helderperez-dev/grumo
   ├── voodoo-development
   └── voodoo-core-development
 
-helderperez-dev/voodoo-store
+helderperez-dev/grumo-store
   └── voodoo-store-development
 
              ↓ sync/release
 
-helderperez-dev/voodoo-skills
+helderperez-dev/grumo-skills
   └── distribution for coding agents
 ```
 
