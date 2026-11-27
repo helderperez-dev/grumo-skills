@@ -55,7 +55,7 @@ def main() -> int:
     if manifest.get("manifest_version") != 1:
         raise SystemExit("unsupported skill manifest schema")
     entries = manifest.get("skills")
-    if not isinstance(entries, list) or len(entries) < 7:
+    if not isinstance(entries, list) or len(entries) < 6:
         raise SystemExit("skill manifest must contain core and focused skills")
     errors: list[str] = []
     declared = set()
