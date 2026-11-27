@@ -1,4 +1,4 @@
-"""Validate the distributed Voodoo skills package without third-party tools."""
+"""Validate the distributed Grumo skills package without third-party tools."""
 
 from __future__ import annotations
 
@@ -44,7 +44,7 @@ def main() -> None:
                 errors.append(f"{skill}: broken link {target}")
     if errors:
         raise SystemExit("\n".join(errors))
-    print(f"validated {len(skill_files)} Voodoo skills")
+    print(f"validated {len(skill_files)} Grumo skills")
 
 
 if __name__ == "__main__":
