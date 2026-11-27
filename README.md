@@ -1,14 +1,14 @@
-# Voodoo Skills
+# Grumo Skills
 
-Official Agent Skills for the **Voodoo ecosystem**.
+Official Agent Skills for the **Grumo ecosystem**.
 
-This repository packages reusable development guidance for AI coding agents so they understand how to build with Voodoo, evolve Voodoo Framework, and work on Voodoo Store without rediscovering the architecture or falling back to generic framework patterns.
+This repository packages reusable development guidance for AI coding agents so they understand how to build with Grumo, evolve Grumo Framework, and work on Grumo Store without rediscovering the architecture or falling back to generic framework patterns.
 
 ## Included skills
 
-### `voodoo-development`
+### `grumo-development`
 
-For application development with Voodoo:
+For application development with Grumo:
 
 - Model and UUIDv7 identity
 - `field()`, indexes, unique constraints and defaults
@@ -17,11 +17,11 @@ For application development with Voodoo:
 - Runtime vs Store ownership
 - Jobs, Events, Streams, Topics and Objects
 - agents and autonomous systems
-- Voodoo application anti-patterns
+- Grumo application anti-patterns
 
-### `voodoo-core-development`
+### `grumo-core-development`
 
-For contributors changing Voodoo Framework itself:
+For contributors changing Grumo Framework itself:
 
 - canonical execution lifecycle
 - Runtime authority
@@ -31,9 +31,9 @@ For contributors changing Voodoo Framework itself:
 - framework CI and release gates
 - architectural invariants
 
-### `voodoo-store-development`
+### `grumo-store-development`
 
-For development of Voodoo Store:
+For development of Grumo Store:
 
 - Rust core
 - native Store primitives
@@ -44,11 +44,11 @@ For development of Voodoo Store:
 
 ### Focused production skills
 
-- `voodoo-production-deployment` — secure configuration, health/readiness,
+- `grumo-production-deployment` — secure configuration, health/readiness,
   provenance, and rollback evidence.
-- `voodoo-component-authoring` — semantic, accessible, token-based UI work.
-- `voodoo-migration-3x` — evidence-driven legacy-to-3.x migration.
-- `voodoo-store-backup-recovery` — backup, restore, compaction, quota, and
+- `grumo-component-authoring` — semantic, accessible, token-based UI work.
+- `grumo-migration-3x` — evidence-driven legacy-to-3.x migration.
+- `grumo-store-backup-recovery` — backup, restore, compaction, quota, and
   disaster-recovery operations.
 
 ## Use today with VS Code / GitHub Copilot
@@ -56,8 +56,8 @@ For development of Voodoo Store:
 Clone the repository:
 
 ```bash
-git clone git@github.com:helderperez-dev/voodoo-skills.git
-cd voodoo-skills
+git clone git@github.com:helderperez-dev/grumo-skills.git
+cd grumo-skills
 ```
 
 ### Install globally for Copilot
@@ -71,7 +71,7 @@ bash scripts/install.sh copilot
 Preview an installation without changing the destination:
 
 ```bash
-bash scripts/install.sh --dry-run project ~/code/voodoo
+bash scripts/install.sh --dry-run project ~/code/grumo
 ```
 
 Normal installations stage existing skills and automatically restore them if
@@ -81,19 +81,19 @@ This installs into:
 
 ```text
 ~/.copilot/skills/
-├── voodoo-development/
-├── voodoo-core-development/
-└── voodoo-store-development/
+├── grumo-development/
+├── grumo-core-development/
+└── grumo-store-development/
 ```
 
 Reload VS Code after the first installation if necessary.
 
 ### Install into one project only
 
-For example, inside the Voodoo Framework checkout:
+For example, inside the Grumo Framework checkout:
 
 ```bash
-bash scripts/install.sh project ~/code/voodoo
+bash scripts/install.sh project ~/code/grumo
 ```
 
 The skills are copied to:
@@ -121,50 +121,50 @@ Global Copilot installation:
 Project installation:
 
 ```powershell
-.\scripts\install.ps1 -Target project -ProjectPath C:\code\voodoo
+.\scripts\install.ps1 -Target project -ProjectPath C:\code\grumo
 ```
 
 ## Using the skills
 
 A skills-capable agent may discover a skill automatically from its description.
 
-You can also explicitly tell the coding agent which Voodoo skill to use.
+You can also explicitly tell the coding agent which Grumo skill to use.
 
 Examples:
 
 ```text
-Use the voodoo-development skill and build a Customer model with indexed email lookup.
+Use the grumo-development skill and build a Customer model with indexed email lookup.
 ```
 
 ```text
-Use voodoo-core-development. Review this change and make sure it preserves Runtime ownership of Store.
+Use grumo-core-development. Review this change and make sure it preserves Runtime ownership of Store.
 ```
 
 ```text
-Use voodoo-store-development. Expose this new Rust primitive through the Python binding.
+Use grumo-store-development. Expose this new Rust primitive through the Python binding.
 ```
 
 When the client exposes slash-command style skill invocation, the corresponding names are:
 
 ```text
-/voodoo-development
-/voodoo-core-development
-/voodoo-store-development
+/grumo-development
+/grumo-core-development
+/grumo-store-development
 ```
 
 ## Repository layout
 
 ```text
-voodoo-skills/
+grumo-skills/
 ├── .github/
 │   └── skills/
-│       ├── voodoo-development/
+│       ├── grumo-development/
 │       │   ├── SKILL.md
 │       │   └── references/
-│       ├── voodoo-core-development/
+│       ├── grumo-core-development/
 │       │   ├── SKILL.md
 │       │   └── references/
-│       └── voodoo-store-development/
+│       └── grumo-store-development/
 │           ├── SKILL.md
 │           └── references/
 ├── scripts/
@@ -181,16 +181,16 @@ This repository is the **distribution repository**.
 The intended long-term ownership model is:
 
 ```text
-helderperez-dev/voodoo
-  ├── voodoo-development
-  └── voodoo-core-development
+helderperez-dev/grumo
+  ├── grumo-development
+  └── grumo-core-development
 
-helderperez-dev/voodoo-store
-  └── voodoo-store-development
+helderperez-dev/grumo-store
+  └── grumo-store-development
 
              ↓ sync/release
 
-helderperez-dev/voodoo-skills
+helderperez-dev/grumo-skills
   └── distribution for coding agents
 ```
 
@@ -198,7 +198,7 @@ This keeps architectural guidance versioned near the implementation while provid
 
 ## Core philosophy
 
-> Do not implement a generic industry pattern merely because it is familiar. First determine whether Voodoo already has a native primitive or architectural rule for the problem.
+> Do not implement a generic industry pattern merely because it is familiar. First determine whether Grumo already has a native primitive or architectural rule for the problem.
 
 The primary architectural rules are:
 
@@ -212,7 +212,7 @@ The primary architectural rules are:
 8. Python typing expresses data semantics.
 9. `field()` expresses persistence metadata.
 10. `relation()` expresses relationships and lifecycle policy.
-11. Do not claim distributed guarantees that Voodoo does not implement and test.
+11. Do not claim distributed guarantees that Grumo does not implement and test.
 12. Add operational complexity only when a real product requirement demands it.
 
 ## Updating
@@ -224,4 +224,4 @@ git pull
 bash scripts/install.sh copilot
 ```
 
-The installer replaces only the three Voodoo skill directories it owns.
+The installer replaces only the three Grumo skill directories it owns.

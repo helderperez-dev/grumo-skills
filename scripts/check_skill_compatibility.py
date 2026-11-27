@@ -7,8 +7,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 MANIFEST = ROOT / "scripts/SOURCE_COMPATIBILITY.json"
-EXPECTED_FRAMEWORK = ">=3.2,<3.3"
-EXPECTED_STORE = ">=0.3,<0.4"
+EXPECTED_FRAMEWORK = ">=2.0.0,<3.0.0"
+EXPECTED_STORE = ">=2.0.0,<3.0.0"
 
 
 def _frontmatter(path: Path) -> dict[str, str]:

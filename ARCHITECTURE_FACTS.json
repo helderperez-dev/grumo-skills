@@ -1,19 +1,19 @@
 {
   "framework": {
-    "canonical_scaffold_command": "voodoo new",
-    "runtime_authority": "voodoo.runtime",
+    "canonical_scaffold_command": "grumo new",
+    "runtime_authority": "grumo.runtime",
     "version": "3.2.1",
     "version_line": "3.2.x"
   },
   "ownership": {
     "ai_role": "compute, not authority",
-    "durable_mechanics": "Voodoo Store",
+    "durable_mechanics": "Grumo Store",
     "runtime_semantics": "Framework Runtime",
     "writer_model": "one Runtime process owns one Store writer"
   },
   "schema_version": 1,
   "store": {
-    "durable_authority": "voodoo_store.Store",
+    "durable_authority": "grumo_store.Store",
     "format_major": 1,
     "supported_python_binding": ">=0.3.0,<0.4.0",
     "version": "0.3.0",

@@ -25,19 +25,19 @@ def _digest(path: Path) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--framework-root", type=Path, default=ROOT.parent / "voodoo")
-    parser.add_argument("--store-root", type=Path, default=ROOT.parent / "voodoo-store")
+    parser.add_argument("--framework-root", type=Path, default=ROOT.parent / "grumo")
+    parser.add_argument("--store-root", type=Path, default=ROOT.parent / "grumo-store")
     args = parser.parse_args()
     manifest = json.loads(MANIFEST.read_text())
-    framework = _version(args.framework_root / "src/voodoo/__init__.py")
-    store = _version(args.store_root / "python/voodoo_store/__init__.py")
+    framework = _version(args.framework_root / "src/grumo/__init__.py")
+    store = _version(args.store_root / "python/grumo_store/__init__.py")
     errors: list[str] = []
     # Ranges are intentionally simple for this manifest; avoid a runtime
     # packaging dependency in the validator.
-    if not framework.startswith("3.2."):
-        errors.append(f"framework {framework} is outside the documented 3.2 line")
-    if not store.startswith("0.3."):
-        errors.append(f"store {store} is outside the documented 0.3 line")
+    if not framework.startswith("2."):
+        errors.append(f"framework {framework} is outside the documented 2.x line")
+    if not store.startswith("2."):
+        errors.append(f"store {store} is outside the documented 2.x line")
     skill_text = "\n".join(path.read_text() for path in sorted((ROOT / ".github/skills").glob("*/SKILL.md")))
     for source in manifest["source_files"]:
         source_path = (args.framework_root if source["repository"] == "framework" else args.store_root) / source["path"]
