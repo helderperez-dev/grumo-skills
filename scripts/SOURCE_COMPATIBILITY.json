@@ -147,5 +147,6 @@
     "Store owns durable mechanics",
     "AI is Compute, not a second Runtime",
     "One Runtime process owns one Store writer"
-  ]
+  ],
+  "source_revision": "Grumo Framework 2.0.1 / Store 2.0.0"
 }
