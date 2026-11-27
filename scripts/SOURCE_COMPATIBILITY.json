@@ -116,7 +116,7 @@
       "path": "docs/ARCHITECTURE.md",
       "skill": "grumo-store-development",
       "source_markers": [
-        "Store persists execution state; Grumo Runtime executes work.",
+        "- Store persists execution state; Voodoo Runtime executes work.",
         "Grumo Store is an independent embedded application-state engine"
       ],
       "skill_markers": [
