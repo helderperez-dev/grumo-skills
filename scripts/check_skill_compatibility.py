@@ -31,7 +31,7 @@ def main() -> int:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     errors: list[str] = []
     entries = manifest.get("skills", [])
-    if len(entries) < 7:
+    if len(entries) < 6:
         errors.append("compatibility manifest must describe the core and focused skills")
     seen: set[str] = set()
     for entry in entries:
@@ -61,6 +61,9 @@ def main() -> int:
             errors.append(f"{name}: required_tools must be a non-empty list")
         if not entry.get("source_revision"):
             errors.append(f"{name}: source_revision is required")
+    actual = {p.parent.name for p in (ROOT / ".github/skills").glob("*/SKILL.md")}
+    if actual != seen:
+        errors.append(f"manifest and distributed skills differ: {sorted(actual ^ seen)}")
     if errors:
         raise SystemExit("skill compatibility contract failed:\n- " + "\n- ".join(errors))
     print(f"skill compatibility contract passed ({len(entries)} skills)")

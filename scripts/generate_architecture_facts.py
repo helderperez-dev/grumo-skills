@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import tomllib
 import re
 from pathlib import Path
 
@@ -20,7 +21,7 @@ def _version(path: Path) -> str:
 
 def build_facts(framework_root: Path, store_root: Path) -> dict[str, object]:
     framework_version = _version(framework_root / "src/grumo/__init__.py")
-    store_version = _version(store_root / "python/grumo_store/__init__.py")
+    store_version = tomllib.loads((store_root / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
     compatibility = json.loads(
         (store_root / "docs/FORMAT_COMPATIBILITY.json").read_text(encoding="utf-8")
     )

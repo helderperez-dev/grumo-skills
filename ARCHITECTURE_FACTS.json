@@ -2,8 +2,8 @@
   "framework": {
     "canonical_scaffold_command": "grumo new",
     "runtime_authority": "grumo.runtime",
-    "version": "3.2.1",
-    "version_line": "3.2.x"
+    "version": "2.0.1",
+    "version_line": "2.0.x"
   },
   "ownership": {
     "ai_role": "compute, not authority",
@@ -15,8 +15,8 @@
   "store": {
     "durable_authority": "grumo_store.Store",
     "format_major": 1,
-    "supported_python_binding": ">=0.3.0,<0.4.0",
-    "version": "0.3.0",
-    "version_line": "0.3.x"
+    "supported_python_binding": ">=2.0.0,<3.0.0",
+    "version": "2.0.0",
+    "version_line": "2.0.x"
   }
 }

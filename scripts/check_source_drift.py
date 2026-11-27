@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import tomllib
 import re
 from pathlib import Path
 
@@ -30,7 +31,7 @@ def main() -> int:
     args = parser.parse_args()
     manifest = json.loads(MANIFEST.read_text())
     framework = _version(args.framework_root / "src/grumo/__init__.py")
-    store = _version(args.store_root / "python/grumo_store/__init__.py")
+    store = tomllib.loads((args.store_root / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
     errors: list[str] = []
     # Ranges are intentionally simple for this manifest; avoid a runtime
     # packaging dependency in the validator.

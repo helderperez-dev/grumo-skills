@@ -14,7 +14,10 @@
       "framework_version_range": ">=2.0.0,<3.0.0",
       "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "uv"],
+      "required_tools": [
+        "python",
+        "uv"
+      ],
       "source_revision": "repository-head"
     },
     {
@@ -23,7 +26,10 @@
       "framework_version_range": ">=2.0.0,<3.0.0",
       "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "uv"],
+      "required_tools": [
+        "python",
+        "uv"
+      ],
       "source_revision": "repository-head"
     },
     {
@@ -32,7 +38,11 @@
       "framework_version_range": ">=2.0.0,<3.0.0",
       "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "cargo", "rustup"],
+      "required_tools": [
+        "python",
+        "cargo",
+        "rustup"
+      ],
       "source_revision": "repository-head"
     },
     {
@@ -41,7 +51,10 @@
       "framework_version_range": ">=2.0.0,<3.0.0",
       "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "uv"],
+      "required_tools": [
+        "python",
+        "uv"
+      ],
       "source_revision": "repository-head"
     },
     {
@@ -50,16 +63,10 @@
       "framework_version_range": ">=2.0.0,<3.0.0",
       "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "uv"],
-      "source_revision": "repository-head"
-    },
-    {
-      "name": "grumo-migration-3x",
-      "path": ".github/skills/grumo-migration-3x/SKILL.md",
-      "framework_version_range": ">=2.0.0,<3.0.0",
-      "store_version_range": ">=2.0.0,<3.0.0",
-      "schema_version": 1,
-      "required_tools": ["python", "uv"],
+      "required_tools": [
+        "python",
+        "uv"
+      ],
       "source_revision": "repository-head"
     },
     {
@@ -68,14 +75,27 @@
       "framework_version_range": ">=2.0.0,<3.0.0",
       "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "cargo", "rustup"],
+      "required_tools": [
+        "python",
+        "cargo",
+        "rustup"
+      ],
       "source_revision": "repository-head"
     }
   ],
   "source_files": [
-    {"repository": "framework", "path": "AGENTS.md"},
-    {"repository": "framework", "path": "docs/PRODUCTION_PROFILE_1_RUNBOOK.md"},
-    {"repository": "store", "path": "docs/FORMAT_COMPATIBILITY.json"}
+    {
+      "repository": "framework",
+      "path": "AGENTS.md"
+    },
+    {
+      "repository": "framework",
+      "path": "docs/PRODUCTION_PROFILE_1_RUNBOOK.md"
+    },
+    {
+      "repository": "store",
+      "path": "docs/FORMAT_COMPATIBILITY.json"
+    }
   ],
   "source_contracts": [
     {

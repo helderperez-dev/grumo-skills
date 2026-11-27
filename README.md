@@ -47,7 +47,6 @@ For development of Grumo Store:
 - `grumo-production-deployment` — secure configuration, health/readiness,
   provenance, and rollback evidence.
 - `grumo-component-authoring` — semantic, accessible, token-based UI work.
-- `grumo-migration-3x` — evidence-driven legacy-to-3.x migration.
 - `grumo-store-backup-recovery` — backup, restore, compaction, quota, and
   disaster-recovery operations.
 
@@ -224,4 +223,4 @@ git pull
 bash scripts/install.sh copilot
 ```
 
-The installer replaces only the three Grumo skill directories it owns.
+The installer replaces only the Grumo skill directories it owns.
