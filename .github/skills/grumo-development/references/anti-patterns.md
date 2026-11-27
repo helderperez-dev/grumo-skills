@@ -12,4 +12,4 @@ Avoid:
 - A giant ORM-style `field(...)` argument bag.
 - Claiming global exactly-once, consensus, or global serializable transactions without implementation proof.
 
-Always ask first: does Voodoo already have a native primitive or architectural rule for this problem?
+Always ask first: does Grumo already have a native primitive or architectural rule for this problem?

@@ -1,11 +1,11 @@
 ---
-name: voodoo-development
-description: Build applications with Voodoo using the intended Model, Runtime, Store, Events, Jobs, Objects, agents, UI, and execution patterns. Use for Voodoo application features, architecture decisions, data models, durable workflows, background work, events, object storage, and autonomous application behavior.
+name: grumo-development
+description: Build applications with Grumo using the intended Model, Runtime, Store, Events, Jobs, Objects, agents, UI, and execution patterns. Use for Grumo application features, architecture decisions, data models, durable workflows, background work, events, object storage, and autonomous application behavior.
 ---
 
-# Voodoo Development
+# Grumo Development
 
-Use Voodoo as an integrated application runtime, not as a collection of unrelated libraries.
+Use Grumo as an integrated application runtime, not as a collection of unrelated libraries.
 
 ## Core rules
 
@@ -22,7 +22,7 @@ Use Voodoo as an integrated application runtime, not as a collection of unrelate
 11. Add infrastructure only when the application requires it.
 12. UI state is session-scoped by default; opt into application scope explicitly.
 13. WebSocket events and patches must be targeted to an authenticated UI session.
-14. Treat generated projects from `voodoo new` as the canonical scaffold; keep aliases thin.
+14. Treat generated projects from `grumo new` as the canonical scaffold; keep aliases thin.
 
 Before modeling data, read [model.md](references/model.md).
 Before choosing persistence/messaging, read [store.md](references/store.md).
@@ -32,8 +32,8 @@ Review [anti-patterns.md](references/anti-patterns.md) before introducing new ab
 ## Preferred Model style
 
 ```python
-from voodoo import Model
-from voodoo.data import field
+from grumo import Model
+from grumo.data import field
 
 class Customer(Model):
     email: str = field(unique=True)
@@ -74,7 +74,7 @@ put tenant, user, or browser-specific values in application-scoped state. Event
 bindings created during rendering belong to the current browser session and
 must not be reused across sessions.
 
-For new applications, use `voodoo new --no-install` and inspect the generated
+For new applications, use `grumo new --no-install` and inspect the generated
 `app/` routes. The package-owned scaffold is the compatibility contract for the
 CLI and external template repository; avoid introducing a second inline
 template implementation.

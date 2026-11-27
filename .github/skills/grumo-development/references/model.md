@@ -2,7 +2,7 @@
 
 ## Identity
 
-Voodoo Models use UUIDv7 as technical identity.
+Grumo Models use UUIDv7 as technical identity.
 
 Keep business identifiers separate:
 
@@ -50,7 +50,7 @@ Validation may be async where the current public API supports it.
 Prefer typed relations:
 
 ```python
-from voodoo.data import Delete, relation
+from grumo.data import Delete, relation
 
 class Order(Model):
     customer: Customer = relation(on_delete=Delete.RESTRICT)

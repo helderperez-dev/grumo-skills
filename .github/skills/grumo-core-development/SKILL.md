@@ -1,9 +1,9 @@
 ---
-name: voodoo-core-development
-description: Develop and review the Voodoo Framework core while preserving Runtime authority, Store ownership, canonical execution semantics, native adapter boundaries, public API discipline, and release gates. Use when changing Runtime, Model internals, execution, adapters, Store integration, agents, framework architecture, CI, tests, or releases.
+name: grumo-core-development
+description: Develop and review the Grumo Framework core while preserving Runtime authority, Store ownership, canonical execution semantics, native adapter boundaries, public API discipline, and release gates. Use when changing Runtime, Model internals, execution, adapters, Store integration, agents, framework architecture, CI, tests, or releases.
 ---
 
-# Voodoo Core Development
+# Grumo Core Development
 
 Use this skill for framework implementation work.
 

@@ -3,7 +3,7 @@
 Default durable substrate:
 
 ```text
-.voodoo/application.vstore
+.grumo/application.grumo
 ```
 
 One Runtime process owns the Store lifecycle and writer.
@@ -27,7 +27,7 @@ Prefer native:
 
 ## Transactions
 
-Voodoo Store supports local transaction boundaries across supported native domains.
+Grumo Store supports local transaction boundaries across supported native domains.
 
 Do not describe current behavior as global consensus, global serializability, or distributed exactly-once unless a future implementation explicitly proves those guarantees.
 

@@ -1,9 +1,9 @@
 ---
-name: voodoo-component-authoring
-description: Author Voodoo UI components with semantic HTML, session-safe events, theme tokens, responsive behavior, accessibility states, and executable examples.
+name: grumo-component-authoring
+description: Author Grumo UI components with semantic HTML, session-safe events, theme tokens, responsive behavior, accessibility states, and executable examples.
 ---
 
-# Voodoo Component Authoring
+# Grumo Component Authoring
 
 Start with the stable component rubric and reuse the preferred family API
 before introducing a new component. Keep rendering declarative and let the

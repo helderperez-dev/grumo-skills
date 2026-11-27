@@ -1,6 +1,6 @@
 # Framework / Store Python Binding Boundary
 
-When Framework depends on Voodoo Store:
+When Framework depends on Grumo Store:
 
 1. inspect the exact current PyO3 surface;
 2. verify parameter names, keyword-only behavior, defaults and return shapes;
@@ -17,7 +17,7 @@ Rust primitive
   -> PyO3 binding
   -> Pythonic Store surface
   -> Runtime adapter
-  -> application-facing Voodoo API
+  -> application-facing Grumo API
 ```
 
 Do not skip layers by reaching into private Store encodings from Framework.
