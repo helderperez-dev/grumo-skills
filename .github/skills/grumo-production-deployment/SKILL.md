@@ -1,16 +1,16 @@
 ---
-name: voodoo-production-deployment
-description: Prepare and review a Voodoo application for secure production deployment, including fail-closed configuration, health/readiness, secrets, proxy trust, package provenance, and rollback evidence.
+name: grumo-production-deployment
+description: Prepare and review a Grumo application for secure production deployment, including fail-closed configuration, health/readiness, secrets, proxy trust, package provenance, and rollback evidence.
 ---
 
-# Voodoo Production Deployment
+# Grumo Production Deployment
 
 Use this skill when an application is moving from local development to a
 controlled production environment.
 
 ## Required gates
 
-1. Set `VOODOO_ENV=production` and provide a non-development signing secret.
+1. Set `GRUMO_ENV=production` and provide a non-development signing secret.
 2. Require secure cookies, CSRF, HSTS, explicit CORS origins, and validated
    proxy trust; never enable credentialed wildcard CORS.
 3. Use the Runtime-owned Store path and one writer per Runtime process.

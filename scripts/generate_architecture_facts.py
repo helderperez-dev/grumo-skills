@@ -1,9 +1,10 @@
-"""Generate and verify machine-readable Voodoo architecture facts."""
+"""Generate and verify machine-readable Grumo architecture facts."""
 
 from __future__ import annotations
 
 import argparse
 import json
+import tomllib
 import re
 from pathlib import Path
 
@@ -19,8 +20,8 @@ def _version(path: Path) -> str:
 
 
 def build_facts(framework_root: Path, store_root: Path) -> dict[str, object]:
-    framework_version = _version(framework_root / "src/voodoo/__init__.py")
-    store_version = _version(store_root / "python/voodoo_store/__init__.py")
+    framework_version = _version(framework_root / "src/grumo/__init__.py")
+    store_version = tomllib.loads((store_root / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
     compatibility = json.loads(
         (store_root / "docs/FORMAT_COMPATIBILITY.json").read_text(encoding="utf-8")
     )
@@ -29,19 +30,19 @@ def build_facts(framework_root: Path, store_root: Path) -> dict[str, object]:
         "framework": {
             "version": framework_version,
             "version_line": ".".join(framework_version.split(".")[:2]) + ".x",
-            "canonical_scaffold_command": "voodoo new",
-            "runtime_authority": "voodoo.runtime",
+            "canonical_scaffold_command": "grumo new",
+            "runtime_authority": "grumo.runtime",
         },
         "store": {
             "version": store_version,
             "version_line": ".".join(store_version.split(".")[:2]) + ".x",
             "format_major": compatibility["format_major"],
             "supported_python_binding": compatibility["supported_python_binding"],
-            "durable_authority": "voodoo_store.Store",
+            "durable_authority": "grumo_store.Store",
         },
         "ownership": {
             "runtime_semantics": "Framework Runtime",
-            "durable_mechanics": "Voodoo Store",
+            "durable_mechanics": "Grumo Store",
             "ai_role": "compute, not authority",
             "writer_model": "one Runtime process owns one Store writer",
         },
@@ -50,8 +51,8 @@ def build_facts(framework_root: Path, store_root: Path) -> dict[str, object]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--framework-root", type=Path, default=ROOT.parent / "voodoo")
-    parser.add_argument("--store-root", type=Path, default=ROOT.parent / "voodoo-store")
+    parser.add_argument("--framework-root", type=Path, default=ROOT.parent / "grumo")
+    parser.add_argument("--store-root", type=Path, default=ROOT.parent / "grumo-store")
     parser.add_argument("--output", type=Path, default=FACTS)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()

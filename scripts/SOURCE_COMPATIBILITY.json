@@ -1,87 +1,107 @@
 {
   "manifest_version": 1,
-  "framework_version_range": ">=3.2,<3.3",
-  "store_version_range": ">=0.3,<0.4",
+  "framework_version_range": ">=2.0.0,<3.0.0",
+  "store_version_range": ">=2.0.0,<3.0.0",
   "source_repositories": {
-    "voodoo-development": "helderperez-dev/voodoo",
-    "voodoo-core-development": "helderperez-dev/voodoo",
-    "voodoo-store-development": "helderperez-dev/voodoo-store"
+    "grumo-development": "helderperez-dev/grumo",
+    "grumo-core-development": "helderperez-dev/grumo",
+    "grumo-store-development": "helderperez-dev/grumo-store"
   },
   "skills": [
     {
-      "name": "voodoo-development",
-      "path": ".github/skills/voodoo-development/SKILL.md",
-      "framework_version_range": ">=3.2,<3.3",
-      "store_version_range": ">=0.3,<0.4",
+      "name": "grumo-development",
+      "path": ".github/skills/grumo-development/SKILL.md",
+      "framework_version_range": ">=2.0.0,<3.0.0",
+      "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "uv"],
+      "required_tools": [
+        "python",
+        "uv"
+      ],
       "source_revision": "repository-head"
     },
     {
-      "name": "voodoo-core-development",
-      "path": ".github/skills/voodoo-core-development/SKILL.md",
-      "framework_version_range": ">=3.2,<3.3",
-      "store_version_range": ">=0.3,<0.4",
+      "name": "grumo-core-development",
+      "path": ".github/skills/grumo-core-development/SKILL.md",
+      "framework_version_range": ">=2.0.0,<3.0.0",
+      "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "uv"],
+      "required_tools": [
+        "python",
+        "uv"
+      ],
       "source_revision": "repository-head"
     },
     {
-      "name": "voodoo-store-development",
-      "path": ".github/skills/voodoo-store-development/SKILL.md",
-      "framework_version_range": ">=3.2,<3.3",
-      "store_version_range": ">=0.3,<0.4",
+      "name": "grumo-store-development",
+      "path": ".github/skills/grumo-store-development/SKILL.md",
+      "framework_version_range": ">=2.0.0,<3.0.0",
+      "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "cargo", "rustup"],
+      "required_tools": [
+        "python",
+        "cargo",
+        "rustup"
+      ],
       "source_revision": "repository-head"
     },
     {
-      "name": "voodoo-production-deployment",
-      "path": ".github/skills/voodoo-production-deployment/SKILL.md",
-      "framework_version_range": ">=3.2,<3.3",
-      "store_version_range": ">=0.3,<0.4",
+      "name": "grumo-production-deployment",
+      "path": ".github/skills/grumo-production-deployment/SKILL.md",
+      "framework_version_range": ">=2.0.0,<3.0.0",
+      "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "uv"],
+      "required_tools": [
+        "python",
+        "uv"
+      ],
       "source_revision": "repository-head"
     },
     {
-      "name": "voodoo-component-authoring",
-      "path": ".github/skills/voodoo-component-authoring/SKILL.md",
-      "framework_version_range": ">=3.2,<3.3",
-      "store_version_range": ">=0.3,<0.4",
+      "name": "grumo-component-authoring",
+      "path": ".github/skills/grumo-component-authoring/SKILL.md",
+      "framework_version_range": ">=2.0.0,<3.0.0",
+      "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "uv"],
+      "required_tools": [
+        "python",
+        "uv"
+      ],
       "source_revision": "repository-head"
     },
     {
-      "name": "voodoo-migration-3x",
-      "path": ".github/skills/voodoo-migration-3x/SKILL.md",
-      "framework_version_range": ">=3.2,<3.3",
-      "store_version_range": ">=0.3,<0.4",
+      "name": "grumo-store-backup-recovery",
+      "path": ".github/skills/grumo-store-backup-recovery/SKILL.md",
+      "framework_version_range": ">=2.0.0,<3.0.0",
+      "store_version_range": ">=2.0.0,<3.0.0",
       "schema_version": 1,
-      "required_tools": ["python", "uv"],
-      "source_revision": "repository-head"
-    },
-    {
-      "name": "voodoo-store-backup-recovery",
-      "path": ".github/skills/voodoo-store-backup-recovery/SKILL.md",
-      "framework_version_range": ">=3.2,<3.3",
-      "store_version_range": ">=0.3,<0.4",
-      "schema_version": 1,
-      "required_tools": ["python", "cargo", "rustup"],
+      "required_tools": [
+        "python",
+        "cargo",
+        "rustup"
+      ],
       "source_revision": "repository-head"
     }
   ],
   "source_files": [
-    {"repository": "framework", "path": "AGENTS.md"},
-    {"repository": "framework", "path": "docs/PRODUCTION_PROFILE_1_RUNBOOK.md"},
-    {"repository": "store", "path": "docs/FORMAT_COMPATIBILITY.json"}
+    {
+      "repository": "framework",
+      "path": "AGENTS.md"
+    },
+    {
+      "repository": "framework",
+      "path": "docs/PRODUCTION_PROFILE_1_RUNBOOK.md"
+    },
+    {
+      "repository": "store",
+      "path": "docs/FORMAT_COMPATIBILITY.json"
+    }
   ],
   "source_contracts": [
     {
       "repository": "framework",
       "path": "docs/architecture.md",
-      "skill": "voodoo-development",
+      "skill": "grumo-development",
       "source_markers": [
         "AI is Compute, not authority.",
         "Effect is not Observation."
@@ -94,10 +114,10 @@
     {
       "repository": "store",
       "path": "docs/ARCHITECTURE.md",
-      "skill": "voodoo-store-development",
+      "skill": "grumo-store-development",
       "source_markers": [
-        "Store persists execution state; Voodoo Runtime executes work.",
-        "Voodoo Store is an independent embedded application-state engine"
+        "Store persists execution state; Grumo Runtime executes work.",
+        "Grumo Store is an independent embedded application-state engine"
       ],
       "skill_markers": [
         "Store owns durable mechanics",
@@ -108,18 +128,18 @@
   "synchronized_skills": [
     {
       "repository": "framework",
-      "source": ".github/skills/voodoo-development/SKILL.md",
-      "distributed": ".github/skills/voodoo-development/SKILL.md"
+      "source": ".github/skills/grumo-development/SKILL.md",
+      "distributed": ".github/skills/grumo-development/SKILL.md"
     },
     {
       "repository": "framework",
-      "source": ".github/skills/voodoo-core-development/SKILL.md",
-      "distributed": ".github/skills/voodoo-core-development/SKILL.md"
+      "source": ".github/skills/grumo-core-development/SKILL.md",
+      "distributed": ".github/skills/grumo-core-development/SKILL.md"
     },
     {
       "repository": "store",
-      "source": ".github/skills/voodoo-store-development/SKILL.md",
-      "distributed": ".github/skills/voodoo-store-development/SKILL.md"
+      "source": ".github/skills/grumo-store-development/SKILL.md",
+      "distributed": ".github/skills/grumo-store-development/SKILL.md"
     }
   ],
   "required_markers": [
@@ -127,5 +147,6 @@
     "Store owns durable mechanics",
     "AI is Compute, not a second Runtime",
     "One Runtime process owns one Store writer"
-  ]
+  ],
+  "source_revision": "Grumo Framework 2.0.1 / Store 2.0.0"
 }

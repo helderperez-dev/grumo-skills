@@ -1,9 +1,9 @@
 ---
-name: voodoo-store-backup-recovery
-description: Operate Voodoo Store backups, verification, corruption recovery, compaction, quotas, and disaster-recovery drills safely.
+name: grumo-store-backup-recovery
+description: Operate Grumo Store backups, verification, corruption recovery, compaction, quotas, and disaster-recovery drills safely.
 ---
 
-# Voodoo Store Backup and Recovery
+# Grumo Store Backup and Recovery
 
 Backups are evidence-bearing artifacts, not opaque copies.
 

@@ -86,7 +86,7 @@ if [[ "$DRY_RUN" == true ]]; then
 fi
 
 mkdir -p "$DEST"
-BACKUP="$(mktemp -d "${TMPDIR:-/tmp}/voodoo-skills-backup.XXXXXX")"
+BACKUP="$(mktemp -d "${TMPDIR:-/tmp}/grumo-skills-backup.XXXXXX")"
 # Remove every managed destination before restoring backups. This also removes
 # skills that were newly created before a later copy failed.
 rollback() {
@@ -125,5 +125,5 @@ trap - ERR
 rm -rf "$BACKUP"
 
 echo
-echo "Voodoo skills installed."
+echo "Grumo skills installed."
 echo "Reload VS Code if necessary."

@@ -63,7 +63,7 @@ if ($DryRun) {
 }
 
 New-Item -ItemType Directory -Force -Path $Dest | Out-Null
-$Backup = Join-Path ([System.IO.Path]::GetTempPath()) ("voodoo-skills-backup-" + [guid]::NewGuid())
+$Backup = Join-Path ([System.IO.Path]::GetTempPath()) ("grumo-skills-backup-" + [guid]::NewGuid())
 New-Item -ItemType Directory -Force -Path $Backup | Out-Null
 try {
     Get-ChildItem -Path $Source -Directory | ForEach-Object {
@@ -96,4 +96,4 @@ try {
 }
 
 Write-Host ""
-Write-Host "Voodoo skills installed. Reload VS Code if necessary."
+Write-Host "Grumo skills installed. Reload VS Code if necessary."

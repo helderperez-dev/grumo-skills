@@ -18,7 +18,7 @@ def run(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
 
 
 def main() -> int:
-    with tempfile.TemporaryDirectory(prefix="voodoo-skills-install-") as directory:
+    with tempfile.TemporaryDirectory(prefix="grumo-skills-install-") as directory:
         project = Path(directory) / "project"
         project.mkdir()
         dry_run = run("bash", str(INSTALLER), "--dry-run", "project", str(project))

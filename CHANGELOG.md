@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Voodoo skills bundle are documented here.
+All notable changes to the Grumo skills bundle are documented here.
 
 ## [Unreleased]
 

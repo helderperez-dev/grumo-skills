@@ -1,4 +1,4 @@
-"""Create a reproducible ZIP of the distributable Voodoo Skills bundle."""
+"""Create a reproducible ZIP of the distributable Grumo Skills bundle."""
 
 from __future__ import annotations
 
