@@ -36,7 +36,7 @@ jobs:
             dist/grumo-skills-manifest.json \
             dist/grumo-skills-${GITHUB_REF_NAME}.zip
       - name: Attest exact release evidence
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: |
             dist/grumo-skills-*.zip
